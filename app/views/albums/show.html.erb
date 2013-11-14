@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Cover image:</b>
+  <%= @album.cover_image %>
+</p>
+
+<p>
+  <b>Cover image name:</b>
+  <%= @album.cover_image_name %>
+</p>
+
+
+<%= link_to 'Edit', edit_album_path(@album) %> |
+<%= link_to 'Back', albums_path %>
