@@ -14,6 +14,7 @@ class AlbumsController < ApplicationController
   # GET /albums/1.json
   def show
     @album = Album.find(params[:id])
+    @size = ([(params[:size] || 640).to_i]*2).join('x')
 
     respond_to do |format|
       format.html # show.html.erb
